@@ -9,7 +9,7 @@ namespace MuseDashScoreRemoval
         {
             if (sceneName != "UISystem_PC" && sceneName != "GameMain") return;
 
-            List<string> objsToRemove = new() { "TxtValue", "GradeScale", "TxtNewBest"};
+            List<string> objsToRemove = new() { "TxtValue", "GradeScale"};
 
             List<GameObject> allObjects = Resources.FindObjectsOfTypeAll<GameObject>().ToList();
             foreach (GameObject obj in allObjects)
